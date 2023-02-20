@@ -18,7 +18,9 @@ class Movie {
 
   wasExpensive() {
     if (this.budget > 100000000) {
-      console.log("movie successful");
+      return true;
+    } else {
+      return false;
     }
   }
 }
@@ -28,3 +30,7 @@ const movie1 = new Movie(
   "Daniel Kwan, Daniel Scheinert",
   107000000
 );
+
+movie1.wasExpensive();
+
+console.log(movie1.wasExpensive());
